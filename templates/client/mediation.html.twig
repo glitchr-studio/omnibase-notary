@@ -1,0 +1,28 @@
+{# The consumer mediator of the notariat, whose coordinates the office must give (Base\Notary\Controller\Client\NotaryController::mediation). #}
+{% extends office_layout() %}
+
+{% block title %}{{ 'mediation.title'|trans({}, 'notary') }}{% endblock %}
+{% block description %}{{ 'mediation.lead'|trans({}, 'notary') }}{% endblock %}
+
+{% block content %}
+<section class="of-page of-narrow no-mediation">
+    <header class="of-page-head">
+        <h1>{{ 'mediation.title'|trans({}, 'notary') }}</h1>
+        <p class="of-lead">{{ 'mediation.lead'|trans({}, 'notary') }}</p>
+    </header>
+    <h2>{{ 'mediation.first'|trans({}, 'notary') }}</h2>
+    <p>{{ 'mediation.first_text'|trans({}, 'notary') }}</p>
+    {% if office %}<address class="of-address">{{ office.name }}<br>{{ office.street }}<br>{{ office.postalCode }} {{ office.city }}</address>{% endif %}
+
+    <h2>{{ 'mediation.then'|trans({}, 'notary') }}</h2>
+    <p>{{ 'mediation.then_text'|trans({}, 'notary') }}</p>
+    <h3>{{ 'mediation.coordinates'|trans({}, 'notary') }}</h3>
+    <address class="of-address">{{ mediator.name }}{% if mediator.address %}<br>{{ mediator.address }}{% endif %}</address>
+    {% if mediator.url %}<p><a href="{{ mediator.url }}" rel="noopener external" target="_blank">{{ 'mediation.site'|trans({}, 'notary') }}</a> — {{ mediator.url|replace({'https://': ''}) }}</p>{% endif %}
+
+    {% if record.chamber %}
+    <h2>{{ 'mediation.chamber'|trans({}, 'notary') }}</h2>
+    <p>{{ 'mediation.chamber_text'|trans({chamber: record.chamber}, 'notary') }}</p>
+    {% endif %}
+</section>
+{% endblock %}

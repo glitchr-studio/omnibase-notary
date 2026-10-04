@@ -1,0 +1,28 @@
+{# The client's space: what comes next, what is new (Base\Notary\Controller\Client\SpaceController::index). #}
+{% extends office_layout() %}
+
+{% block title %}{{ 'space.title'|trans({}, 'notary') }}{% endblock %}
+
+{% block content %}
+<section class="of-page of-space">
+    <header class="of-page-head">
+        {% include '@Notary/client/space/_nav.html.twig' %}
+        <h1>{{ 'space.hello'|trans({}, 'notary') }}</h1>
+        <p class="of-lead">{{ 'space.lead'|trans({}, 'notary') }}</p>
+    </header>
+    <div class="of-columns">
+        <section aria-labelledby="no-next">
+            <h2 id="no-next">{{ 'space.next'|trans({}, 'notary') }}</h2>
+            {% if upcoming %}
+            <ul class="of-appointments">{% for appointment in upcoming %}{% include '@Office/client/space/_appointment.html.twig' with {appointment: appointment, actions: true} %}{% endfor %}</ul>
+            {% else %}<p class="of-empty">{{ 'space.no_upcoming'|trans({}, 'office') }}</p>{% endif %}
+            <p class="of-actions"><a class="of-button" href="{{ path('office_booking') }}">{{ 'space.ask'|trans({}, 'notary') }}</a></p>
+        </section>
+        <section aria-labelledby="no-docs">
+            <h2 id="no-docs">{{ 'space.documents'|trans({}, 'notary') }}{% if unread %} <span class="of-badge">{{ 'space.unread'|trans({count: unread}, 'notary') }}</span>{% endif %}</h2>
+            {% include '@Office/client/space/_documents.html.twig' with {documents: documents} %}
+            <p class="of-actions"><a class="of-button of-button-quiet" href="{{ path('office_space_documents') }}">{{ 'space.all_documents'|trans({}, 'notary') }}</a></p>
+        </section>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,27 @@
+{# The fields of practice (Base\Notary\Controller\Client\NotaryController::areas). #}
+{% extends office_layout() %}
+
+{% block title %}{{ 'areas.title'|trans({}, 'notary') }}{% endblock %}
+{% block description %}{{ 'areas.lead'|trans({}, 'notary') }}{% endblock %}
+
+{% block content %}
+<section class="of-page no-areas">
+    <header class="of-page-head">
+        <h1>{{ 'areas.title'|trans({}, 'notary') }}</h1>
+        <p class="of-lead">{{ 'areas.lead'|trans({}, 'notary') }}</p>
+    </header>
+    {% if areas %}
+    <ol class="no-area-list">
+        {% for area in areas %}
+        <li>
+            <h2><a href="{{ path('notary_area', {slug: area.slug}) }}">{{ area.name }}</a></h2>
+            {% if area.summary %}<p>{{ area.summary }}</p>{% endif %}
+            {% if area.deeds %}<p class="of-meta">{{ area.deeds|join(' · ') }}</p>{% endif %}
+        </li>
+        {% endfor %}
+    </ol>
+    {% else %}
+    <p class="of-empty">{{ 'areas.none'|trans({}, 'notary') }}</p>
+    {% endif %}
+</section>
+{% endblock %}

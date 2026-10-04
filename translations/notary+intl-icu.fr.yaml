@@ -1,0 +1,134 @@
+contact:
+    notice: Ce formulaire n’est pas confidentiel. N’y joignez et n’y décrivez <strong>aucune pièce ni information confidentielle</strong> — une fois votre dossier ouvert, déposez vos documents dans le coffre chiffré de votre espace client.
+
+areas:
+    title: Domaines d’intervention
+    lead: Les matières dans lesquelles l’office reçoit des actes et conseille.
+    none: Les domaines d’intervention seront présentés ici.
+    deeds: Actes et démarches
+    team: Qui s’en occupe à l’étude
+    others: Autres domaines
+    ask: Demander un rendez-vous
+    cost: Combien cela coûte-t-il ?
+    cost_text: Les actes de cette matière relèvent pour la plupart du tarif réglementé.
+    cost_link: Voir les tarifs
+
+tariff:
+    title: Tarifs
+    lead: La rémunération du notaire est fixée par l’État pour les actes tarifés ; elle est la même dans tous les offices de France.
+    what: Ce que recouvrent les « frais de notaire »
+    what_taxes: <strong>Les droits et taxes</strong>, perçus par le notaire pour le compte de l’État et des collectivités, puis reversés au Trésor public.
+    what_disbursements: <strong>Les débours</strong>, sommes avancées pour votre compte afin de payer les intervenants et les documents nécessaires à l’acte.
+    what_emoluments: <strong>La rémunération de l’office</strong> — émoluments pour les actes tarifés, honoraires pour les autres prestations.
+    regulated: Les actes tarifés — émoluments
+    regulated_text: 'Les émoluments sont fixés par le code de commerce (articles L. 444-1 et suivants, R. 444-1 et suivants, A. 444-53 et suivants). Le tarif en vigueur est celui de l’{order}.'
+    regulated_until: 'Il s’applique jusqu’au {date}.'
+    official: Le texte officiel
+    official_code: Code de commerce — tarif des notaires (Légifrance)
+    official_order: 'L’{order} (Légifrance)'
+    official_info: Le tarif expliqué par les Notaires de France
+    discounts: Remises pratiquées par l’office
+    discounts_missing: L’office n’a pas encore indiqué ici les remises qu’il pratique.
+    fees: Les prestations non tarifées — honoraires
+    fees_text: Pour les prestations que le tarif ne couvre pas (consultation, conseil, rédaction de certains actes), le notaire convient avec son client d’honoraires, par une convention écrite établie avant toute intervention.
+    statement: Un état détaillé des frais vous est remis à l’issue des formalités ; il distingue les droits payés au Trésor, les débours, les émoluments et les honoraires.
+    payment: Règlement
+    payment_text: Aucun paiement n’est proposé sur ce site. Les règlements se font auprès de l’office, qui vous indique ses modalités.
+    dispute: En cas de désaccord
+    dispute_text: Adressez-vous d’abord à l’office. Si le différend persiste, vous pouvez saisir gratuitement le médiateur de la consommation du notariat.
+    dispute_link: Médiation
+
+mediation:
+    title: Médiation
+    lead: En cas de différend avec l’office, une solution amiable peut être recherchée avec l’aide d’un tiers.
+    first: D’abord, l’office
+    first_text: Écrivez à l’office pour exposer votre réclamation ; il vous répond.
+    then: Ensuite, le médiateur de la consommation du notariat
+    then_text: Si la réponse ne vous satisfait pas, ou faute de réponse, vous pouvez saisir gratuitement le médiateur de la consommation du notariat. Joignez à votre demande la réclamation adressée à l’office.
+    coordinates: Coordonnées du médiateur
+    site: Site du médiateur
+    chamber: La chambre des notaires
+    chamber_text: 'L’office relève de la {chamber}, qui veille au respect des règles de la profession.'
+
+space:
+    title: Espace client
+    hello: Votre espace
+    lead: Vos rendez-vous et vos documents, à l’abri — les documents sont chiffrés et ne circulent jamais par courriel.
+    next: Rendez-vous
+    documents: Documents
+    unread: '{count, plural, one {# nouveau} other {# nouveaux}}'
+    all_documents: Tous les documents et dépôt
+    ask: Demander un rendez-vous
+    nav:
+        home: Accueil
+        appointments: Rendez-vous
+        documents: Documents
+
+settings:
+    holder: Notaires — structure titulaire de l’office (dénomination et forme)
+    crpcen: Notaires — numéro CRPCEN de l’office
+    chamber: Notaires — chambre dont dépend l’office
+    declared_at: Notaires — site déclaré à la chambre le (AAAA-MM-JJ)
+    brand: Notaires — charte graphique et bloc-marque « Notaires de France » appliqués (oui / non)
+    discounts: Notaires — remises pratiquées, par catégorie d’actes et par tranche (ou « Aucune remise »)
+    fees: Notaires — honoraires des prestations non tarifées
+
+compliance:
+    email: Adresses de messagerie en notaires.fr
+    email_advice: 'L’adresse professionnelle d’un notaire se termine par « .{suffix} » (règlement professionnel, art. 16.3). À corriger dans Lieux et accès : {addresses}.'
+    email_none: 'Aucune adresse de messagerie n’est indiquée pour l’office. Elle doit se terminer par « .{suffix} » (règlement professionnel, art. 16.3).'
+    email_sender: 'Les courriels du site partent de {addresses} : l’adresse d’envoi devrait elle aussi se terminer par « .{suffix} » (règlement professionnel, art. 16.3).'
+    chamber: Site déclaré à la chambre des notaires
+    chamber_name_advice: Indiquez dans Réglages la chambre dont dépend l’office.
+    chamber_advice: 'L’ouverture du site, et toute modification des pages où l’office propose ses services, sont à déclarer sans délai à la {chamber} (règlement professionnel, art. 14.4). Indiquez la date de la déclaration dans Réglages.'
+    chamber_future: La date de déclaration à la chambre est dans le futur.
+    mediator: Coordonnées du médiateur de la consommation du notariat
+    mediator_advice: Le nom et les coordonnées du médiateur doivent figurer sur le site (règlement professionnel, art. 25.1) — configuration notary.mediator.
+    mediator_url: 'L’adresse du site du médiateur n’est pas une adresse https : {url}.'
+    tariff: Tarifs et remises affichés
+    tariff_link_advice: La page des tarifs doit renvoyer au texte officiel — configuration notary.tariff.
+    tariff_discounts_advice: Indiquez dans Réglages les remises pratiquées par l’office, par catégorie d’actes et par tranche, ou qu’il n’en pratique aucune — elles sont publiées à la page Tarifs (code de commerce, art. L. 444-4).
+    tariff_outdated: 'La période de l’{order} s’est achevée le {date} : mettez à jour la référence du tarif (configuration notary.tariff).'
+    wording: Textes sans comparaison ni dénigrement
+    wording_advice: 'À relire — {found}. La communication du notaire reste neutre et objective et s’abstient de toute comparaison (règlement professionnel, art. 14.1 et 14.2).'
+    identification: Identification de l’office
+    identification_advice: 'Il manque : {missing}. La structure titulaire et la chambre se saisissent dans Réglages, l’adresse et le téléphone dans Lieux et accès.'
+    brand: Charte graphique et bloc-marque de la profession
+    brand_advice: Le site doit respecter la charte graphique et le plan de nommage du Conseil supérieur du notariat et porter le bloc-marque « Notaires de France » (règlement professionnel, art. 14.4 et 14.5). Ils sont publiés sur l’intranet de la profession — confirmez dans Réglages une fois appliqués.
+
+admin:
+    field:
+        name: Nom
+        position: Ordre
+        summary: En une phrase
+        body: Texte de la page
+        deeds: Actes et démarches
+        members: Qui s’en occupe
+        active: En ligne
+    help:
+        body: Un paragraphe par bloc, séparés par une ligne vide. Sans comparaison avec d’autres offices.
+        deeds: Un par ligne.
+
+request:
+    title: Demander un rendez-vous
+    lead: Indiquez l’objet de votre demande ; l’office vous rappelle pour convenir d’une date.
+    notice: 'Dites en quelques mots de quoi il s’agit, <strong>sans détail confidentiel ni pièce</strong> : le dossier s’ouvre au rendez-vous, et vos documents se déposent ensuite dans votre espace client.'
+    type: Objet du rendez-vous
+    choose: Choisir…
+    member: Avec
+    no_preference: Sans préférence
+    name: Nom et prénom
+    email: Courriel
+    phone: Téléphone
+    message: Votre demande, en quelques mots
+    message_help: Facultatif. Conservé chiffré, lu par l’office seulement.
+    privacy: 'Vos coordonnées servent à vous recontacter pour fixer ce rendez-vous. Elles sont conservées {months} mois au plus si aucune suite n’est donnée, et ne sont transmises à personne.'
+    submit: Envoyer la demande
+    sent: Votre demande est enregistrée. L’office vous rappelle pour convenir d’une date ; un courriel vous le confirme.
+    none: La demande de rendez-vous en ligne n’est pas ouverte. Appelez l’office.
+    unavailable: La demande ne peut pas être enregistrée pour le moment. Appelez l’office.
+    how: Comment cela se passe
+    how_1: Vous envoyez votre demande.
+    how_2: L’office vous rappelle et fixe la date avec vous.
+    how_3: Vous recevez la confirmation, et une invitation à ouvrir votre espace client.
+    phone_instead: 'Vous préférez téléphoner :'
