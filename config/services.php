@@ -25,8 +25,14 @@ return function (ContainerConfigurator $configurator) {
             $src.'/Form/Model/',
             $src.'/Controller/Admin/',
             $src.'/Admin/',
+            $src.'/Demo/',
             $src.'/NotaryBundle.php',
         ]);
+
+    // The demonstration accounts of an office, when the installed glitchr/omnibase has the demo environment.
+    if (interface_exists('Base\\Demo\\DemoAccountProviderInterface')) {
+        $services->load('Base\\Notary\\Demo\\', $src.'/Demo/');
+    }
 
     $services->load('Base\\Notary\\Controller\\Client\\', $src.'/Controller/Client/')
         ->tag('controller.service_arguments');

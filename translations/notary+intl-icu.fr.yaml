@@ -132,3 +132,21 @@ request:
     how_2: L’office vous rappelle et fixe la date avec vous.
     how_3: Vous recevez la confirmation, et une invitation à ouvrir votre espace client.
     phone_instead: 'Vous préférez téléphoner :'
+
+# The demonstration accounts (Base\Notary\Demo\NotaryDemoAccounts): the button, and what the role sees.
+demo:
+    notaire:
+        label: Notaire
+        description: "L'agenda de l'office, les demandes de rendez-vous à fixer, les documents des clients : il les lit et leur en adresse."
+    clerc:
+        label: Clerc
+        description: "Les dossiers qu'il prépare : l'agenda, les demandes, les documents des clients, qu'il lit comme le notaire."
+    accueil:
+        label: Accueil
+        description: "Le standard : l'agenda, les demandes de rendez-vous et les messages du site ; il voit qu'un document existe, sans lire ce qui est confidentiel."
+    etude:
+        label: Administration de l'étude
+        description: "L'administration de l'office : l'équipe, les domaines d'intervention, les réglages, le journal des accès, la conformité."
+    client:
+        label: Client
+        description: "Son espace : un rendez-vous demandé, un projet d'acte à lire dans le coffre, une pièce déposée."

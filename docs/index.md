@@ -132,6 +132,32 @@ beyond the client and whoever sent the document:
 The CRUD of the fields of practice (`Base\Notary\Entity\Area`), the settings section, and seven
 checks in omnibase/office's `office_compliance` widget.
 
+## Demonstration accounts
+
+In glitchr/omnibase's `demo` environment (its `docs/20-architecture/demo.md`) the sign-in page offers
+one button for each role of an office. `Base\Notary\Demo\NotaryDemoAccounts` declares them:
+
+| Identifier | Role | |
+|---|---|---|
+| `notaire` | group "Notaires" (`ROLE_NOTARY`) | the agenda, the requests to settle, the clients' documents: reads them, sends some |
+| `clerc` | group "Clercs" (`ROLE_CLERK`) | the same files, read as the notary reads them |
+| `accueil` | group "Accueil" (`ROLE_STAFF`) | the agenda, the requests, the site's messages; sees that a document exists, reads nothing confidential |
+| `etude` | `ROLE_ADMIN` | the office's administration: team, fields of practice, settings, access log, compliance |
+| `client` | group "Clients" | the client's space: an appointment requested, a draft deed in the vault, a document deposited |
+
+The password is the identifier. The fixtures take the accounts from omnibase's factory and attach
+what makes them worth signing in as - a member of the team and an agenda, a request and documents:
+
+```php
+public function __construct(private readonly \Base\Demo\DemoAccountFactory $accounts) {}
+
+$notaire = $this->accounts->account('notaire', $manager);   // created with its group, or the database's
+```
+
+An office without one of these roles leaves it out (`base.demo.exclude: [accueil]`); a site that
+renames one declares the same identifier in its own provider. The labels are
+`demo.<identifier>.label` and `.description` in the `notary` domain.
+
 ## More
 
 [Rules and sources](rules.md)
