@@ -145,7 +145,7 @@ demo:
         label: Accueil
         description: "Le standard : l'agenda, les demandes de rendez-vous et les messages du site ; il voit qu'un document existe, sans lire ce qui est confidentiel."
     etude:
-        label: Administration de l'étude
+        label: Étude
         description: "L'administration de l'office : l'équipe, les domaines d'intervention, les réglages, le journal des accès, la conformité."
     client:
         label: Client
