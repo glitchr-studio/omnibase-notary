@@ -4,7 +4,7 @@
     "description": "The notarial regime on omnibase/office: a notary's office site within its professional rules - the regulated tariff and the discounts displayed, the consumer mediator of the notariat, e-mail addresses ending in notaires.fr, the declaration to the chamber, wording checked against comparison, no online payment; fields of practice, the client's space on the encrypted vault, and who of the office reads a document.",
     "keywords": ["symfony", "omnibase", "notaire", "notary", "office notarial", "compliance", "déontologie"],
     "homepage": "https://github.com/glitchr-studio/omnibase-notary",
-    "license": "LGPL-3.0-or-later",
+    "license": "MIT",
     "authors": [
         {
             "name": "Marco Meyer",
