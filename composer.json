@@ -5,6 +5,7 @@
     "keywords": ["symfony", "omnibase", "notaire", "notary", "office notarial", "compliance", "déontologie"],
     "homepage": "https://github.com/glitchr-studio/omnibase-notary",
     "license": "MIT",
+    "abandoned": "omnibase/legal",
     "authors": [
         {
             "name": "Marco Meyer",

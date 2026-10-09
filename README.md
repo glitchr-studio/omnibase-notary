@@ -1,5 +1,11 @@
 # omnibase/notary
 
+> **Abandoned on 2026-10-09 in favour of [omnibase/legal](https://github.com/glitchr-studio/omnibase-legal)**, the
+> legal professions in one bundle, a profile each: this bundle is its `notary` profile
+> (`legal.profession: notary`). omnibase/lawyer and omnibase/notary were one structure written twice. Nothing more is
+> developed here; to move a site, see [omnibase/legal's docs/index.md](https://github.com/glitchr-studio/omnibase-legal/blob/main/docs/index.md#from-omnibaselawyer-and-omnibasenotary)
+> (classes, routes, parameters, and a migration that renames the tables and keeps their data).
+
 The notarial regime on [omnibase/office](https://github.com/glitchr-studio/omnibase-office): the site of a
 French notary's office, within the profession's rules.
 
